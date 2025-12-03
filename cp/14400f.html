@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Intel Core i5-14400F — Техномощь</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="photo/ggg.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/cpu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Russo+One&display=swap" rel="stylesheet">
+    <style>
+        .product-container {
+            display: flex;
+            gap: 40px;
+            margin: 30px;
+            flex-wrap: wrap;
+        }
+        .product-image {
+            flex: 1;
+            max-width: 400px;
+        }
+        .product-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .product-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .product-info h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .product-info .price {
+            font-size: 22px;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .specs {
+            margin: 30px;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+        .specs h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .specs table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .specs table td {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .specs table td:first-child {
+            font-weight: bold;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== ШАПКА ===== -->
+    <header>
+        <div class="logo">
+            <img src="photo/ggg.png" alt="Логотип Техномощь" width="60" height="60">
+            <h1>Техномощь</h1>
+        </div>
+        <!-- Чекбокс для управления бургер-меню -->
+    <input type="checkbox" id="burger-toggle" class="burger-toggle">
+    
+    <!-- Кнопка бургер-меню -->
+    <label for="burger-toggle" class="burger" aria-label="Открыть меню">
+        <span class="burger__box"></span>
+    </label>
+    
+    <!-- Основная навигация -->
+    <nav class="main-nav">
+        <ul class="menu">
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="cp.html" class="active">Процессоры</a></li>
+            <li><a href="../gpu/gpu.html">Видеокарты</a></li>
+            <li><a href="../ssd/ssd.html">SSD</a></li>
+            <li><a href="../hdd/hdd.html">HDD</a></li>
+            <li><a href="../ozu/ozu.html">ОЗУ</a></li>
+            <li><a href="../mat/mat.html">Материнские платы</a></li>
+            <li><a href="../bp/bp.html">Блоки питания</a></li>
+            <li><a href="../ohlad/ohlad.html">Кулеры</a></li>
+            <li><a href="../korpus/korpus.html">Корпуса</a></li>
+        </ul>
+    </nav>
+
+    </header>
+
+    <!-- ===== ОСНОВНОЙ КОНТЕНТ ===== -->
+    <main>
+        <section class="product-container">
+            <div class="product-image">
+                <img src="photo/14400F.jpg" alt="Intel Core i5-14400F">
+            </div>
+            <div class="product-info">
+                <h2>Intel Core i5-14400F</h2>
+                <p class="price">17990 ₽</p>
+                <a href="#" class="buy-btn">Купить</a>
+            </div>
+        </section>
+
+        <section class="specs">
+            <h3>Технические характеристики</h3>
+            <table>
+                <tr>
+                    <td>Модель</td>
+                    <td>14400F</td>
+                </tr>
+                <tr>
+                    <td>Ядро</td>
+                    <td>Raptor Lake</td>
+                </tr>
+                <tr>
+                    <td>Сокет</td>
+                    <td>LGA 1700</td>
+                </tr>
+                <tr>
+                    <td>Общее количество ядер</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Количество высокопроизводительных ядер</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Количество энергоэффективных ядер</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Частота</td>
+                    <td>2.5 ГГц / 4.7 ГГц Turbo</td>
+                </tr>
+                <tr>
+                    <td>Частота энергоэффективных ядер</td>
+                    <td>1.8 ГГц / 3.5 ГГц Turbo</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <!-- ===== ПОДВАЛ ===== -->
+    <footer>
+        <div class="footer-inner">
+            <p class="copyright">© 2025 Техномощь</p>
+            <div class="social-row" aria-label="Наши социальные сети">
+                <a class="social-btn social-vk" href="https://vk.com/" target="_blank" rel="noopener" aria-label="ВКонтакте">VK</a>
+                <a class="social-btn social-tg" href="https://t.me/" target="_blank" rel="noopener" aria-label="Telegram">TG</a>
+                <a class="social-btn social-ig" href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">INST</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+    

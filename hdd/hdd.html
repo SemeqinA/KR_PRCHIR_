@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>HDD — Техномощь</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="photo/ggg.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/hdd.css"> <!-- можно оставить тот же стиль, что для SSD -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== ШАПКА ===== -->
+<header>
+    <div class="logo">
+        <img src="photo/ggg.png" alt="Логотип Техномощь" width="60" height="60">
+        <h1>Техномощь</h1>
+    </div>
+     <!-- Чекбокс для управления бургер-меню -->
+    <input type="checkbox" id="burger-toggle" class="burger-toggle">
+    
+    <!-- Кнопка бургер-меню -->
+    <label for="burger-toggle" class="burger" aria-label="Открыть меню">
+        <span class="burger__box"></span>
+    </label>
+    
+    <!-- Основная навигация -->
+    <nav class="main-nav">
+        <ul class="menu">
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="../cp/cp.html">Процессоры</a></li>
+            <li><a href="../gpu/gpu.html">Видеокарты</a></li>
+            <li><a href="../ssd/ssd.html">SSD</a></li>
+            <li><a href="hdd.html" class="active">HDD</a></li>
+            <li><a href="../ozu/ozu.html">ОЗУ</a></li>
+            <li><a href="../mat/mat.html">Материнские платы</a></li>
+            <li><a href="../bp/bp.html">Блоки питания</a></li>
+            <li><a href="../ohlad/ohlad.html">Кулеры</a></li>
+            <li><a href="../korpus/korpus.html">Корпуса</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- ===== ОСНОВНОЙ КОНТЕНТ ===== -->
+<main>
+    <section class="catalog-section">
+        <h2>HDD накопители</h2>
+
+        <div class="cards-row">
+
+            <!-- Seagate BarraCuda 2TB -->
+            <a href="seagate_barracuda_2tb.html" class="card">
+                <div class="thumb">
+                    <img src="photo/baracuda.jpg" alt="Seagate BarraCuda 2TB">
+                </div>
+                <div class="meta">
+                    <h3>Seagate BarraCuda 2TB</h3>
+                    <p class="desc">SATA III • 7200 RPM • 3.5"</p>
+                    <p class="price">7 990 ₽</p>
+                </div>
+            </a>
+
+            <!-- WD Blue 2TB -->
+            <a href="wd_blue_2tb.html" class="card">
+                <div class="thumb">
+                    <img src="photo/wd_blue.jpg" alt="WD Blue 2TB">
+                </div>
+                <div class="meta">
+                    <h3>WD Blue 2TB</h3>
+                    <p class="desc">SATA III • 5400/7200 RPM • 3.5"</p>
+                    <p class="price">8 490 ₽</p>
+                </div>
+            </a>
+
+            <!-- Seagate IronWolf 4TB (NAS) -->
+            <a href="seagate_ironwolf_4tb.html" class="card">
+                <div class="thumb">
+                    <img src="photo/iron_wolf.jpg" alt="Seagate IronWolf 4TB">
+                </div>
+                <div class="meta">
+                    <h3>Seagate IronWolf 4TB</h3>
+                    <p class="desc">SATA III • NAS • 5900–7200 RPM • 64 MB cache</p>
+                    <p class="price">12 990 ₽</p>
+                </div>
+            </a>
+
+            <!-- WD Black 4TB (Performance) -->
+            <a href="wd_black_4tb.html" class="card">
+                <div class="thumb">
+                    <img src="photo/wd_black.jpg" alt="WD Black 4TB">
+                </div>
+                <div class="meta">
+                    <h3>WD Black 4TB</h3>
+                    <p class="desc">SATA III • Performance • 7200 RPM • кеш 256 MB</p>
+                    <p class="price">14 490 ₽</p>
+                </div>
+            </a>
+
+        </div>
+    </section>
+</main>
+
+<!-- ===== ПОДВАЛ ===== -->
+<footer>
+    <div class="footer-inner">
+        <p class="copyright">© 2025 Техномощь</p>
+        <div class="social-row">
+            <a class="social-btn social-vk" href="https://vk.com/" target="_blank">VK</a>
+            <a class="social-btn social-tg" href="https://t.me/" target="_blank">TG</a>
+            <a class="social-btn social-ig" href="https://instagram.com/" target="_blank">INST</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

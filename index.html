@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Техномощь — Комплектующие</title>
+    <link rel="icon" href="photo/ggg.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Russo+One&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/stil.css">
+    <!-- Кнопка в шапке — размести внутри .header-inner -->
+
+
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">  
+            <div class="logo">
+            <img src="photo/ggg.png" alt="Логотип Техномощь" width="60" height="60">
+            <h1>Техномощь</h1>
+            </div>
+
+            <!-- Чекбокс-хак: скрытый чекбокс -->
+            <input id="burger-toggle" class="burger-toggle" type="checkbox" aria-label="Открыть меню">
+
+            <!-- Визуальный бургер (label привязан к чекбоксу) -->
+            <label for="burger-toggle" class="burger" aria-hidden="true">
+            <span class="burger__box" aria-hidden="true"></span>
+            </label>
+
+            <!-- Навигация -->
+            <nav class="main-nav" role="navigation" aria-label="Главное меню">
+                <ul class="menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="cp/cp.html">Процессоры</a></li>
+                    <li><a href="gpu/gpu.html">Видеокарты</a></li>
+                    <li><a href="ssd/ssd.html">SSD</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+                
+            </nav>
+            <!-- Блок авторизации в шапке -->
+            <div class="header-auth">
+                <!-- Кнопки для быстрого доступа -->
+                <button class="auth-btn login-btn" onclick="showLoginModal()">Вход</button>
+                <button class="auth-btn register-btn" onclick="showRegisterModal()">Регистрация</button>
+                
+                <!-- Или компактная форма -->
+                <div class="auth-compact">
+                    <input type="email" placeholder="Email" class="auth-input">
+                    <input type="password" placeholder="Пароль" class="auth-input">
+                    <button class="auth-submit">Войти</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="site-main">
+
+        <section id="products" class="products-section">
+            <div class="container">
+
+                <div class="products">
+                    <h2>Комплектующие и услуги</h2>
+                    <p>В этом разделе — основные категории комплектующих, которые мы обслуживаем и поставляем.</p>
+
+                    <ul class="products-list">
+                        <li><a href="cp/cp.html">Процессоры (CPU)</a></li>
+                        <li><a href="gpu/gpu.html">Видеокарты (GPU)</a></li>
+                        <li><a href="ozu/ozu.html">Оперативная память (RAM)</a></li>
+                        <li><a href="ssd/ssd.html">SSD / Накопители</a></li>
+                        <li><a href="hdd/hdd.html">HDD / Жёсткие диски</a></li>
+                        <li><a href="mat/mat.html">Материнские платы (Motherboard)</a></li>
+                        <li><a href="bp/bp.html">Блоки питания (PSU)</a></li>
+                        <li><a href="korpus/korpus.html">Корпуса (Case)</a></li>
+                        <li><a href="ohlad/ohlad.html">Системы охлаждения (Cooler)</a></li>
+                        <li><a href="feedback.html">Лайк</a></li>
+                    </ul>
+
+                    <article id="cpu">
+                        <h3>Процессоры (CPU)</h3>
+                        <p>Диагностика, замена, апгрейд, установка термопасты, подбор совместимых плат и ОЗУ.</p>
+                    </article>
+
+                    <article id="gpu">
+                        <h3>Видеокарты (GPU)</h3>
+                        <p>Чистка, перепайка, ремонт питания, восстановление после перегрева, настройка драйверов.</p>
+                    </article>
+
+                    <article id="ram">
+                        <h3>Оперативная память (RAM)</h3>
+                        <p>Тестирование, подбор совместимости, установка двух/четырёхканальных конфигураций.</p>
+                    </article>
+
+                    <article id="ssd">
+                        <h3>SSD / Накопители</h3>
+                        <p>Клонирование дисков, восстановление данных (в рамках программного уровня), установка и оптимизация.</p>
+                    </article>
+
+                    <article id="mobo">
+                        <h3>Материнские платы</h3>
+                        <p>Диагностика слотов, обновление BIOS, ремонт элементов питания, настройка UEFI.</p>
+                    </article>
+                </div>
+                
+
+                <!-- Правый блок: Галерея (мини-превью комплектующих) -->
+                <!-- ===== Галерея комплектующих (мозаика на Grid) ===== -->
+        <section id="gallery-mosaic" class="gallery-mosaic">
+            <h2>Наши комплектующие</h2>
+
+            <div class="mosaic-grid">
+                <div class="mosaic-item" data-caption="Процессор">
+                <img src="photo/cpu.jpg" alt="Процессор">
+                <div class="mosaic-overlay"><span>Процессор</span></div>
+                </div>
+
+                <div class="mosaic-item" data-caption="Видеокарта">
+                <img src="photo/gpu.jpg" alt="Видеокарта">
+                <div class="mosaic-overlay"><span>Видеокарта</span></div>
+                </div>
+
+                <div class="mosaic-item" data-caption="ОЗУ">
+                <img src="photo/ozu.jpg" alt="ОЗУ">
+                <div class="mosaic-overlay"><span>ОЗУ</span></div>
+                </div>
+
+                <div class="mosaic-item" data-caption="SSD">
+                <img src="photo/ssd.jpg" alt="SSD накопитель">
+                <div class="mosaic-overlay"><span>SSD</span></div>
+                </div>
+
+                <div class="mosaic-item" data-caption="Материнская плата">
+                <img src="photo/mother_board.jpg" alt="Материнская плата">
+                <div class="mosaic-overlay"><span>Материнская плата</span></div>
+                </div>
+
+                <div class="mosaic-item" data-caption="Блок питания">
+                <img src="photo/bp.jpg" alt="Блок питания">
+                <div class="mosaic-overlay"><span>Блок питания</span></div>
+                </div>
+            </div>
+            </section>
+            
+
+            </div>
+                    <!-- ===== Практика №7 — Выполнено по ТЗ (вставить в <main>) ===== -->
+        <section id="pr7" class="pr7-section">
+        
+
+
+
+
+        </section>
+
+        <section id="pract6" class="pract-section">
+        <h2>Сервис Центр Техномощь</h2>
+
+        <!-- 1) Четыре кнопки -->
+        <div class="buttons-row">
+            <button class="btn btn-1">Диагностика</button>
+            <button class="btn btn-2">Чистка</button>
+            <button class="btn btn-3">Ремонт</button>
+            <button class="btn btn-4">Апгрейд</button>
+        </div>
+
+        <div class="notify-wrap">
+            <div class="notify">
+            <button class="notify-btn" aria-haspopup="true" aria-expanded="false">
+                Уведомления <span class="badge">3</span>
+            </button>
+            <ul class="notify-list" aria-hidden="true">
+                <li><strong>Заказ:</strong> Готов к выдаче</li>
+                <li><strong>Сообщение:</strong> Новый отзыв</li>
+                <li><strong>Скидка:</strong> Купон 10%</li>
+            </ul>
+            </div>
+        </div>
+
+        <!-- 3) Три карточки -->
+        <div class="cards-row">
+            <article class="card">
+            <h3>Процессор</h3>
+            <p>Диагностика и апгрейд CPU — тесты и подбор совместимости.</p>
+            <a class="card-cta" href="#cpu">Подробнее</a>
+            </article>
+
+            <article class="card">
+            <h3>Видеокарта</h3>
+            <p>Чистка, терморегуляция, ремонт питания и перепайка.</p>
+            <a class="card-cta" href="#gpu">Подробнее</a>
+            </article>
+
+            <article class="card">
+            <h3>SSD / Накопители</h3>
+            <p>Клонирование, установка, восстановление (ПО уровень).</p>
+            <a class="card-cta" href="#ssd">Подробнее</a>
+            </article>
+        </div>
+
+        <!-- 4) Видео-контейнер с подписью и hover-эффектом -->
+        <div class="video-feature">
+            <div class="video-frame">
+            <!-- Используй свою ссылку на видео -->
+           <iframe width="720" height="405" src="https://rutube.ru/play/embed/8696e4f790f0ead34cce4034382143a8/" style="border: none;" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            </div>
+            <p class="video-caption">Краткий видео-обзор: разбор комплектующих и полезные советы.</p>
+        </div>
+        </section>
+        <!-- ===== Конец практики ===== -->
+
+        <!-- ===== Контейнер: Карта + Видео (как в наработках) ===== -->
+        <section id="map-video" class="map-video">
+            <div class="map-container">
+                <!-- Вставьте сюда ваш iframe Google Maps (или оставьте заглушку) -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.000057912233!2d37.50029807667528!3d55.74112797307991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54957194432dd%3A0xd780fda110bdc756!2z0KLQpiDQk9C-0YDQsdGD0YjQutCw!5e0!3m2!1sru!2sru!4v1762849933941!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="video-container">
+                <!-- Пример видео — замените на своё -->
+                <iframe width="720" height="405" src="https://rutube.ru/play/embed/8df1c91732c9d886de850dd9bfd11b1e/" style="border: none;" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            </div>
+        </section>
+
+        <!-- ===== Обратная связь (как у тебя было) ===== -->
+        <!-- ===== ОБРАТНАЯ СВЯЗЬ + РЕГИСТРАЦИЯ ===== -->
+        <section id="feedback-container">
+        <!-- Левая часть — обратная связь -->
+        <div id="feedback">
+            <h2>Обратная связь</h2>
+            <form method="post" action="#">
+            <fieldset>
+                <legend>Свяжитесь с нами</legend>
+
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+
+                <label for="tel">Телефон:</label>
+                <input type="tel" id="tel" name="tel" placeholder="+7 (___) ___-__-__" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.ru" required>
+
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Введите сообщение..." required></textarea>
+
+                <div class="checkbox-group">
+                <label><input type="checkbox" required> Согласен на обработку персональных данных</label>
+                </div>
+
+                <button type="submit">Отправить</button>
+                <button type="reset">Очистить</button>
+            </fieldset>
+            </form>
+        </div>
+
+
+
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Техномощь</p>
+        <!-- 2) Три кнопки соцсетей (футер-подобные) -->
+        <div class="social-buttons-main">
+            <a class="social-btn-main vk" href="https://vk.com" target="_blank">VK</a>
+            <a class="social-btn-main tg" href="https://t.me" target="_blank">TG</a>
+            <a class="social-btn-main ig" href="https://instagram.com" target="_blank">INST</a>
+        </div>
+
+    </footer>
+    <script>
+  // Закрывает mobile menu при клике на ссылку внутри .main-nav
+  document.addEventListener('click', function(e){
+    if (!e.target.matches('.main-nav a')) return;
+    const checkbox = document.querySelector('#burger-toggle');
+    if (checkbox && checkbox.checked) checkbox.checked = false;
+  });
+</script>
+<!-- Подключение JavaScript -->
+<script src="js/script.js"></script>
+<!-- Модальное окно входа -->
+<div id="loginModal" class="modal">
+    <div class="modal-overlay" onclick="hideLoginModal()"></div>
+    <div class="modal-window">
+        <button class="modal-close" onclick="hideLoginModal()" aria-label="Закрыть">×</button>
+        <div class="modal-form">
+            <h3>Вход в аккаунт</h3>
+            
+            <!-- Проверка логина/пароля (Задание 2) -->
+            <div class="form-group">
+                <label for="login-username">Логин:</label>
+                <input type="text" id="login-username" placeholder="Введите логин">
+            </div>
+            
+            <div class="form-group">
+                <label for="login-password">Пароль:</label>
+                <input type="password" id="login-password" placeholder="Введите пароль">
+            </div>
+            
+            <button onclick="checkAdminFromForm()" class="btn-primary">Войти</button>
+            <button onclick="hideLoginModal()" class="btn-ghost">Отмена</button>
+            
+            <div class="form-footer">
+                <p>Нет аккаунта? <a href="#" onclick="hideLoginModal(); showRegisterModal()">Зарегистрируйтесь</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Модальное окно регистрации -->
+    <div id="registerModal" class="modal">
+        <div class="modal-overlay" onclick="hideRegisterModal()"></div>
+        <div class="modal-window">
+            <button class="modal-close" onclick="hideRegisterModal()" aria-label="Закрыть">×</button>
+            <div class="modal-form">
+                <h3>Регистрация</h3>
+                
+                <div class="form-group">
+                    <label for="reg-name">Имя:</label>
+                    <input type="text" id="reg-name" placeholder="Введите ваше имя" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="reg-email">Email:</label>
+                    <input type="email" id="reg-email" placeholder="example@mail.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="reg-password">Пароль:</label>
+                    <input type="password" id="reg-password" placeholder="Придумайте пароль" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="reg-password2">Повторите пароль:</label>
+                    <input type="password" id="reg-password2" placeholder="Повторите пароль" required>
+                </div>
+                
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" required>
+                        Согласен с условиями использования
+                    </label>
+                </div>
+                
+                <button onclick="registerUser()" class="btn-primary">Зарегистрироваться</button>
+                <button onclick="hideRegisterModal()" class="btn-ghost">Отмена</button>
+                
+                <div class="form-footer">
+                    <p>Уже есть аккаунт? <a href="#" onclick="hideRegisterModal(); showLoginModal()">Войдите</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
