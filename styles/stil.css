@@ -184,13 +184,6 @@ h1,h2,h3 { font-family: "Russo One", sans-serif; color: #2e2e2f; margin: 0 0 0.6
 .buttons-row { display:flex; gap:0.8rem; flex-wrap:wrap; margin-bottom:1rem; }
 .btn { position:relative; padding:.7rem 1rem; border:none; background:var(--bg-dark); color:#fff; font-weight:700; border-radius:8px; cursor:pointer; transition: transform .25s ease, box-shadow .25s ease; }
 
-/* Трехколоночный макет карточек */
-.cards-row { display:flex; gap:1rem; margin:1rem 0; flex-wrap:wrap; }
-.card { position:relative; flex:1 1 calc(33.333% - 1rem); background:linear-gradient(180deg,#fff,#fbfbfb); padding:1rem; border-radius:12px; box-shadow:0 8px 18px rgba(2,6,23,0.06); overflow:hidden; transition: transform .28s var(--trans), box-shadow .28s ease; }
-.card:hover { transform:translateY(-8px) scale(1.01); box-shadow:0 18px 40px rgba(2,6,23,0.12); }
-.card h3{ margin:0 0 .4rem 0; } .card p{ margin:0 0 .8rem 0; color:#444; }
-.card-cta{ display:inline-block; padding:.45rem .7rem; background:var(--bg-dark); color:#fff; text-decoration:none; border-radius:8px; font-weight:700; transition: transform .2s ease; }
-.card-cta:hover{ transform: translateY(-4px); }
 
 /* Выпадающее меню уведомлений */
 .notify { position:relative; display:inline-block; }

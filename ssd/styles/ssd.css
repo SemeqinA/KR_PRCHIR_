@@ -1,4 +1,3 @@
-/* styles/korpus.css — Адаптивные стили для страницы Корпусов */
 :root{
   --bg: #f5f5f7;
   --accent: #01090f;
@@ -21,7 +20,7 @@ body{
   min-height: 100vh;
 }
 
-/* ===== ШАПКА ===== */
+/* ШАПКА */
 header{
   background:var(--accent);
   color:#fff;
@@ -46,7 +45,7 @@ nav .menu{
 nav .menu li a{color:#fff;text-decoration:none;padding:.45rem .8rem;border-radius:6px;font-weight:700}
 nav .menu li a.active, nav .menu li a:hover{background:rgba(255,255,255,0.06)}
 
-/* ===== MAIN LAYOUT ===== */
+/* MAIN LAYOUT */
 main{
   max-width:1200px;
   margin:1.2rem auto;
@@ -62,7 +61,7 @@ main{
   font-size: clamp(1.5rem, 4vw, 2rem);
 }
 
-/* ===== CARDS ===== */
+/* CARDS */
 .cards-row{
   display:flex;
   gap:1rem;
@@ -125,7 +124,7 @@ main{
   pointer-events:none;
 }
 
-/* ===== ПОДВАЛ ===== */
+/* ПОДВАЛ */
 footer{
   background:var(--accent);
   color:#fff;
@@ -180,7 +179,7 @@ footer{
 .social-tg{ background:linear-gradient(180deg,#30a0ef,#2172b6); }
 .social-ig{ background:linear-gradient(180deg,#e4405f,#833ab4); }
 
-/* ===== СТРАНИЦА ТОВАРА ===== */
+/* СТРАНИЦА ТОВАРА */
 .product-container{
   display:flex;
   gap:2rem;
@@ -275,7 +274,7 @@ footer{
   min-width:150px;
 }
 
-/* ===== АДАПТИВНОСТЬ ===== */
+/* АДАПТИВНОСТЬ */
 @media (max-width: 768px){
   header{
     flex-direction: column;
@@ -349,7 +348,8 @@ footer{
     min-width: 100%;
   }
 }
-/* ===== Бургер-меню (адаптив) ===== */
+
+/* Бургер-меню (адаптив) */
 /* Скрытый чекбокс */
 .burger-toggle {
   position: absolute;
@@ -359,7 +359,7 @@ footer{
 
 /* Бургер (видимая кнопка) */
 .burger {
-  display: none;               /* скрыт на десктопе, появится на мобилях в media query */
+  display: none;
   width: 48px;
   height: 48px;
   border-radius: 10px;
@@ -411,10 +411,10 @@ footer{
     display: flex;
   }
 
-  /* прячем обычную навигацию (скроем, но не удаляем из потока) */
+  /* прячем обычную навигацию */
   .main-nav {
     position: absolute;
-    top: 72px; /* под шапкой — подкорректируй под высоту header */
+    top: 72px;
     left: 0;
     right: 0;
     background: rgba(1,9,15,0.98);
@@ -443,7 +443,7 @@ footer{
     font-weight:700;
   }
 
-  /* При открытом чекбоксе — показываем меню (комбинатор) */
+  /* При открытом чекбоксе — показываем меню */
   .burger-toggle:checked ~ .burger + .main-nav,
   .burger-toggle:checked ~ .main-nav {
     visibility: visible;
@@ -466,7 +466,8 @@ footer{
   /* Доп: сделаем ссылки крупнее в меню */
   .main-nav .menu li a { font-size: 1.05rem; text-align: center; }
 }
-/* ===== Шапка и бургер-меню ===== */
+
+/* Шапка и бургер-меню */
 .site-header {
     display: flex;
     justify-content: space-between;
@@ -512,7 +513,7 @@ footer{
     color: #ff6600;
 }
 
-/* ===== Бургер ===== */
+/* Бургер */
 .burger-toggle {
     display: none;
 }
@@ -577,8 +578,9 @@ footer{
         display: block;
     }
 }
+
 .burger-wrapper {
     display: flex;
     align-items: center;
-    margin-right: 15px; /* Отступ от правого края */
+    margin-right: 15px;
 }
